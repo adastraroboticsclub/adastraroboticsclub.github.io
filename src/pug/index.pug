@@ -32,16 +32,16 @@ html(lang='en')
         nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
             .container
                 a.navbar-brand(href='#page-top')
-                    img(src='assets/img/navbar-logo.svg', alt='...')
+                    img(src='assets/img/navbar-logo.png', alt='...')
                 button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
                     i.fas.fa-bars.ms-1
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.text-uppercase.ms-auto.py-4.py-lg-0
                         li.nav-item
-                            a.nav-link(href='#services') Services
+                            a.nav-link(href='#goals') Goals
                         li.nav-item
-                            a.nav-link(href='#portfolio') Portfolio
+                            a.nav-link(href='#robots') Robots
                         li.nav-item
                             a.nav-link(href='#about') About
                         li.nav-item
@@ -53,235 +53,201 @@ html(lang='en')
             .container
                 .masthead-subheading Ad Astra 
                 .masthead-heading.text-uppercase Robotics Club
-                a.btn.btn-primary.btn-xl.text-uppercase(href='#services') Tell Me More
+                a.btn.btn-primary.btn-xl.text-uppercase(href='#goals') Tell Me More
 
         // Services
-        section#services.page-section
+        section#goals.page-section
             .container
                 .text-center
-                    h2.section-heading.text-uppercase Services
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+                    h2.section-heading.text-uppercase Future Goals
+                    h3.section-subheading.text-muted We can't wait to see what our teams become.
                 .row.text-center
                     .col-md-4
                         span.fa-stack.fa-4x
                             i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-shopping-cart.fa-stack-1x.fa-inverse
-                        h4.my-3 E-Commerce
+                            i.fas.fa-user-plus.fa-stack-1x.fa-inverse
+                        h4.my-3 Expand Membership
                         p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                            | We aim to grow our club membership, welcoming diverse youth from all backgrounds and skill levels.
                     .col-md-4
                         span.fa-stack.fa-4x
                             i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-laptop.fa-stack-1x.fa-inverse
-                        h4.my-3 Responsive Design
+                            i.fas.fa-people-group.fa-stack-1x.fa-inverse
+                        h4.my-3 Community Engagement
                         p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                            | We plan to engage more with our local community through public demonstrations, robotics competitions, and collaboration with local schools and organizations.
                     .col-md-4
                         span.fa-stack.fa-4x
                             i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-lock.fa-stack-1x.fa-inverse
-                        h4.my-3 Web Security
+                            i.fas.fa-person-chalkboard.fa-stack-1x.fa-inverse
+                        h4.my-3  Enhance Learning Experience
                         p.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+                            | We strive to continually improve and expand our curriculum, incorporating cutting-edge technology and real-world applications of robotics.
+                .row.text-center
+                    .col-md-4
+                        span.fa-stack.fa-4x
+                            i.fas.fa-circle.fa-stack-2x.text-primary
+                            i.fas.fa-map.fa-stack-1x.fa-inverse
+                        h4.my-3 Foster Mentorship
+                        p.text-muted
+                            | We aspire to create a mentorship program where experienced members can guide newer members, fostering a culture of collaboration and shared learning.
+                    .col-md-4
+                        span.fa-stack.fa-4x
+                            i.fas.fa-circle.fa-stack-2x.text-primary
+                            i.fas.fa-money-bill-trend-up.fa-stack-1x.fa-inverse
+                        h4.my-3 Secure Funding
+                        p.text-muted
+                            |  We aim to secure stable funding through grants, donations, and sponsorships to provide our members with the best resources and opportunities.
+                    .col-md-4
+                        span.fa-stack.fa-4x
+                            i.fas.fa-circle.fa-stack-2x.text-primary
+                            i.fas.fa-bullhorn.fa-stack-1x.fa-inverse
+                        h4.my-3  STEM Advocacy
+                        p.text-muted
+                            | We seek to use our platform to advocate for increased emphasis on STEM education.
 
         // Portfolio Grid
-        section#portfolio.page-section.bg-light
-            .container
+        section#robots.page-section.bg-light
+            #portfolio.container
                 .text-center
-                    h2.section-heading.text-uppercase Portfolio
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+                    h2.section-heading.text-uppercase Robots
+                    h3.section-subheading.text-muted See what our teams have built.
                 .row
                     .col-lg-4.col-sm-6.mb-4
                         // Portfolio item 1
                         .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal1')
+                            a.portfolio-link(data-bs-toggle='modal', href='#robotGrabby')
                                 .portfolio-hover
                                     .portfolio-hover-content
                                         i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/1.jpg', alt='...')
+                                img.img-fluid(src='assets/img/robots/grabby.jpg', alt='Grabby the Robot')
                             .portfolio-caption
-                                .portfolio-caption-heading Threads
-                                .portfolio-caption-subheading.text-muted Illustration
+                                .portfolio-caption-heading Grabby
+                                .portfolio-caption-subheading.text-muted 2023-2024 Volume Up
                     .col-lg-4.col-sm-6.mb-4
                         // Portfolio item 2
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal2')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/2.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Explore
-                                .portfolio-caption-subheading.text-muted Graphic Design
                     .col-lg-4.col-sm-6.mb-4
                         // Portfolio item 3
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal3')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/3.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Finish
-                                .portfolio-caption-subheading.text-muted Identity
-                    .col-lg-4.col-sm-6.mb-4.mb-lg-0
-                        // Portfolio item 4
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal4')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/4.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Lines
-                                .portfolio-caption-subheading.text-muted Branding
-                    .col-lg-4.col-sm-6.mb-4.mb-sm-0
-                        // Portfolio item 5
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal5')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/5.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Southwest
-                                .portfolio-caption-subheading.text-muted Website Design
-                    .col-lg-4.col-sm-6
-                        // Portfolio item 6
-                        .portfolio-item
-                            a.portfolio-link(data-bs-toggle='modal', href='#portfolioModal6')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/6.jpg', alt='...')
-                            .portfolio-caption
-                                .portfolio-caption-heading Window
-                                .portfolio-caption-subheading.text-muted Photography
+
 
         // About
         section#about.page-section
             .container
                 .text-center
                     h2.section-heading.text-uppercase About
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
-                ul.timeline
-                    li
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/1.jpg', alt='...')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 2009-2011
-                                h4.subheading Our Humble Beginnings
-                            .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                    li.timeline-inverted
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/2.jpg', alt='...')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 March 2011
-                                h4.subheading An Agency is Born
-                            .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                    li
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/3.jpg', alt='...')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 December 2015
-                                h4.subheading Transition to Full Service
-                            .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                    li.timeline-inverted
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/4.jpg', alt='...')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 July 2020
-                                h4.subheading Phase Two Expansion
-                            .timeline-body
-                                p.text-muted
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
-                    li.timeline-inverted
-                        .timeline-image
-                            h4
-                                | Be Part
-                                br
-                                | Of Our
-                                br
-                                | Story!
+                    h3.section-subheading.text-muted Coming soon...
+                //- ul.timeline
+                //-     li
+                //-         .timeline-image
+                //-             img.rounded-circle.img-fluid(src='assets/img/about/1.jpg', alt='...')
+                //-         .timeline-panel
+                //-             .timeline-heading
+                //-                 h4 2009-2011
+                //-                 h4.subheading Our Humble Beginnings
+                //-             .timeline-body
+                //-                 p.text-muted
+                //-                     | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                //-     li.timeline-inverted
+                //-         .timeline-image
+                //-             img.rounded-circle.img-fluid(src='assets/img/about/2.jpg', alt='...')
+                //-         .timeline-panel
+                //-             .timeline-heading
+                //-                 h4 March 2011
+                //-                 h4.subheading An Agency is Born
+                //-             .timeline-body
+                //-                 p.text-muted
+                //-                     | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                //-     li
+                //-         .timeline-image
+                //-             img.rounded-circle.img-fluid(src='assets/img/about/3.jpg', alt='...')
+                //-         .timeline-panel
+                //-             .timeline-heading
+                //-                 h4 December 2015
+                //-                 h4.subheading Transition to Full Service
+                //-             .timeline-body
+                //-                 p.text-muted
+                //-                     | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                //-     li.timeline-inverted
+                //-         .timeline-image
+                //-             img.rounded-circle.img-fluid(src='assets/img/about/4.jpg', alt='...')
+                //-         .timeline-panel
+                //-             .timeline-heading
+                //-                 h4 July 2020
+                //-                 h4.subheading Phase Two Expansion
+                //-             .timeline-body
+                //-                 p.text-muted
+                //-                     | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!
+                //-     li.timeline-inverted
+                //-         .timeline-image
+                //-             h4
+                //-                 | Be Part
+                //-                 br
+                //-                 | Of Our
+                //-                 br
+                //-                 | Story!
 
         // Team
         section#team.page-section.bg-light
             .container
                 .text-center
                     h2.section-heading.text-uppercase Our Amazing Team
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+                    h3.section-subheading.text-muted The next generation of scientists, engineers, and innovators.
                 .row
                     .col-lg-4
                         .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/1.jpg', alt='...')
-                            h4 Parveen Anand
-                            p.text-muted Lead Designer
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Parveen Anand Twitter Profile')
-                                i.fab.fa-twitter
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Parveen Anand Facebook Profile')
-                                i.fab.fa-facebook-f
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Parveen Anand LinkedIn Profile')
-                                i.fab.fa-linkedin-in
+                            img.mx-auto.rounded-circle(src='assets/img/team/camden.jpg', alt='...')
+                            h4 Camden
+                            p.text-muted Team Captain
+
                     .col-lg-4
                         .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/2.jpg', alt='...')
-                            h4 Diana Petersen
-                            p.text-muted Lead Marketer
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Diana Petersen Twitter Profile')
-                                i.fab.fa-twitter
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Diana Petersen Facebook Profile')
-                                i.fab.fa-facebook-f
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Diana Petersen LinkedIn Profile')
-                                i.fab.fa-linkedin-in
+                            img.mx-auto.rounded-circle(src='assets/img/team/cody.jpg', alt='...')
+                            h4 Cody
+                            p.text-muted Innovation Specialist
+ 
                     .col-lg-4
                         .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/3.jpg', alt='...')
-                            h4 Larry Parker
-                            p.text-muted Lead Developer
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Larry Parker Twitter Profile')
-                                i.fab.fa-twitter
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Larry Parker Facebook Profile')
-                                i.fab.fa-facebook-f
-                            a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Larry Parker LinkedIn Profile')
-                                i.fab.fa-linkedin-in
+                            img.mx-auto.rounded-circle(src='assets/img/team/des.jpg', alt='...')
+                            h4 Des
+                            p.text-muted Data Scientist
+                .row
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/toby.jpg', alt='...')
+                            h4 Toby
+                            p.text-muted Chief Engineer
+
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/zeke.jpg', alt='...')
+                            h4 Zeke
+                            p.text-muted Strategy and Tactics
+ 
+                    .col-lg-4
+
+
                 .row
                     .col-lg-8.mx-auto.text-center
                         p.large.text-muted
-                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
+                            | Interested in joining? Get in touch!
 
         // Clients
         div.py-5
             .container
                 .row.align-items-center
                     .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/microsoft.svg', alt='...', aria-label='Microsoft Logo')
+                        a(href='https://engr.ku.edu/')
+                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/ku-engineering.jpg', alt='...', aria-label='KU School of Engineering')
                     .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/google.svg', alt='...', aria-label='Google Logo')
                     .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/facebook.svg', alt='...', aria-label='Facebook Logo')
                     .col-md-3.col-sm-6.my-3
-                        a(href='#!')
-                            img.img-fluid.img-brand.d-block.mx-auto(src='assets/img/logos/ibm.svg', alt='...', aria-label='IBM Logo')
 
         // Contact
         section#contact.page-section
             .container
                 .text-center
                     h2.section-heading.text-uppercase Contact Us
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+                    h3.section-subheading.text-muted We would love to hear from you about your robotics dreams.
 
                 // * * * * * * * * * * * * * * *
                 // * * SB Forms Contact Form * *
@@ -370,25 +336,20 @@ html(lang='en')
             .container
                 .row.align-items-center
                     .col-lg-4.text-lg-start
-                        | Copyright &copy; Your Website 2023
+                        | Copyright &copy; Ad Astra Robotics Club 2023
                     .col-lg-4.my-3.my-lg-0
-                        a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Twitter')
-                            i.fab.fa-twitter
-                        a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Facebook')
-                            i.fab.fa-facebook-f
-                        a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='LinkedIn')
-                            i.fab.fa-linkedin-in
+                        //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Twitter')
+                        //-     i.fab.fa-twitter
+                        //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Facebook')
+                        //-     i.fab.fa-facebook-f
+                        //- a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='LinkedIn')
+                        //-     i.fab.fa-linkedin-in
                     .col-lg-4.text-lg-end
-                        a.link-dark.text-decoration-none.me-3(href='#!') Privacy Policy
-                        a.link-dark.text-decoration-none(href='#!') Terms of Use
+                        //- a.link-dark.text-decoration-none.me-3(href='#!') Privacy Policy
+                        //- a.link-dark.text-decoration-none(href='#!') Terms of Use
 
         // Portfolio Modals
-        include includes/portfolio-modal-1
-        include includes/portfolio-modal-2
-        include includes/portfolio-modal-3
-        include includes/portfolio-modal-4
-        include includes/portfolio-modal-5
-        include includes/portfolio-modal-6
+        include includes/robot-grabby
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
