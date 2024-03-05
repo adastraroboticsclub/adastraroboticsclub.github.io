@@ -8,7 +8,7 @@ compose:
 interaction:
   sh:
     description: Open a Bash shell within a Rails container (with dependencies up)
-    service: rails
+    service: node
     command: /bin/bash
 
 
