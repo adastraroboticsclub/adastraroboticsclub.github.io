@@ -1,0 +1,32 @@
+version: '7.1'
+
+compose:
+  files:
+    - .dockerdev/compose.yml
+  project_name: cola-atps
+
+interaction:
+  sh:
+    description: Open a Bash shell within a Rails container (with dependencies up)
+    service: rails
+    command: /bin/bash
+
+
+  setup:
+    description: Alias for provision to normalize this for the bnb team
+    command: dip provision
+
+  install:
+    description: npm install yo
+    service: node
+    command: bash -c "cd /app && npm install"
+
+  build:
+    description: builds the project - this builds assets, HTML, JS, and CSS into dist
+    service: node
+    command: bash -c "cd /app && npm run build"
+
+provision:
+  - dip compose down --volumes
+  - dip compose up -d postgres redis minio createbuckets
+  - dip bash -c bin/setup

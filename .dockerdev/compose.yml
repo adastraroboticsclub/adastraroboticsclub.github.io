@@ -1,0 +1,19 @@
+x-app: &app
+  build:
+    context: ../
+    dockerfile: .dockerdev/Dockerfile
+    target: base
+  image: aarc:v1
+  stdin_open: true
+  tty: true
+  volumes:
+    - ..:/app:cached
+  environment: &env
+    BLAH: "blah"
+
+services:
+  node:
+    <<: *app
+    command: bash -c "cd /app && npm start"
+    ports:
+      - '3000:3000'
