@@ -41,6 +41,8 @@ html(lang='en')
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.text-uppercase.ms-auto.py-4.py-lg-0
                         li.nav-item
+                            a.nav-link.btn(href='#worlds') Donate
+                        li.nav-item
                             a.nav-link(href='#goals') Goals
                         li.nav-item
                             a.nav-link(href='#robots') Robots
@@ -60,7 +62,26 @@ html(lang='en')
                 .masthead-heading.text-uppercase Robotics Club
                 a.btn.btn-primary.btn-xl.text-uppercase(href='#goals') Tell Me More
 
-        // Services
+        // Worlds!
+        section#worlds.page-section.bg-light
+            #portfolio.container
+                .text-center
+                    h2.section-heading.text-uppercase Team Thunder Wins Big!
+                .row
+                    .col-lg-6.col-sm-6.mb-4
+                        img.rounded.img-fluid.img-thumbnail(src='assets/img/state-champs.jpg', alt='State Champs')
+                    .col-lg-6.col-sm-6.mb-4
+                        p
+                            | At an incredible Kansas State Championship tournament, Team Thunder scored the second highest skills score in the state. Normally this is not a tournament qualifier. However, another team
+                            em double qualified,
+                            | giving the team a chance to attend the 2024 VEX Robotics World Championship! 
+                        p 
+                            | Team Thunder will have 3 days in Dallas to meet and make alliances with over 400 elementary school teams from 50 countries around the world!
+                        p 
+                            | Support the team by making a gift that helps the team cover the cost of travel to Texas, the $1800 registration fee, and their future in STEM. Thanks for your generosity!
+                div.d-flex.justify-content-center
+                    a.btn.btn-primary.btn-xl.text-uppercase(href="https://givebutter.com/ad-astra-robotics-club-2024") Donate
+        // Goals
         section#goals.page-section
             .container
                 .text-center
@@ -238,6 +259,10 @@ html(lang='en')
 
         // Sponsors
         section#sponsors.py-5
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Sponsors
+                    p.text-muted Thanks to the organizations that have helped our club succeed.
             .container
                 .row.align-items-center
                     .col-md-3.col-sm-6.my-3
