@@ -22,3 +22,6 @@
 @import "./sections/team.scss";
 @import "./sections/contact.scss";
 @import "./sections/footer.scss";
+
+#sponsors a img {opacity: 0.25;}
+#sponsors a:hover img {opacity: 0.5;}
