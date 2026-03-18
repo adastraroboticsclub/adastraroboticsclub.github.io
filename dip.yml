@@ -3,7 +3,7 @@ version: '7.1'
 compose:
   files:
     - .dockerdev/compose.yml
-  project_name: cola-atps
+  project_name: aarc
 
 interaction:
   sh:

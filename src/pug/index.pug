@@ -73,13 +73,14 @@ html(lang='en')
         section#worlds.page-section.bg-light
             #portfolio.container
                 .text-center
-                    h2.section-heading.text-uppercase Night Hawks and Thunder Hawks Win Big!
+                    h2.section-heading.text-uppercase Night Hawks and Phantom Hawks Win Big!
                 .row
                     .col-lg-6.col-sm-6.mb-4
-                        img.rounded.img-fluid.img-thumbnail.mb-3(src='assets/img/night-hawks-2025.png', alt='State Champs')
-                        img.rounded.img-fluid.img-thumbnail(src='assets/img/thunder-hawks-2025.png', alt='State Champs')
+                        img.rounded.img-fluid.img-thumbnail.mb-3(src='assets/img/night-hawks-2026.jpg', alt='State Champs')
+                        img.rounded.img-fluid.img-thumbnail(src='assets/img/phantom-hawks-2026.jpg', alt='State Champs')
+                        img.rounded.img-fluid.img-thumbnail(src='assets/img/thunder-hawks-2026.jpg', alt='State Champs')
                     .col-lg-6.col-sm-6.mb-4
-                        include includes/2025-worlds
+                        include includes/2026-worlds
                 div.d-flex.justify-content-center
                     a.btn.btn-primary.btn-xl.text-uppercase(href="https://givebutter.com/auqZ1R") Donate
         // Goals
@@ -153,6 +154,15 @@ html(lang='en')
                                 .portfolio-caption-subheading.text-muted 2023-2024 Volume Up
                     .col-lg-4.col-sm-6.mb-4
                         // Portfolio item 2
+                        .portfolio-item
+                            a.portfolio-link(data-bs-toggle='modal', href='#robotFlipper')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/robots/thunder-bot-2026.jpg', alt='Flipper')
+                            .portfolio-caption
+                                .portfolio-caption-heading Flipper
+                                .portfolio-caption-subheading.text-muted 2025-2026 Mix and Match
                     .col-lg-4.col-sm-6.mb-4
                         // Portfolio item 3
 
@@ -224,33 +234,55 @@ html(lang='en')
                         .team-member
                             img.mx-auto.rounded-circle(src='assets/img/team/camden.jpg', alt='...')
                             h4 Camden
-                            p.text-muted Team Captain
+                            p.text-muted Night Hawks
 
                     .col-lg-4
                         .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/cody.jpg', alt='...')
-                            h4 Cody
-                            p.text-muted Innovation Specialist
+                            img.mx-auto.rounded-circle(src='assets/img/team/riley.jpg', alt='...')
+                            h4 Riley
+                            p.text-muted Night Hawks
+
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/tyler.jpg', alt='...')
+                            h4 Tyler
+                            p.text-muted Night Hawks
+                .row
  
                     .col-lg-4
                         .team-member
                             img.mx-auto.rounded-circle(src='assets/img/team/des.jpg', alt='...')
                             h4 Des
-                            p.text-muted Data Scientist
-                .row
+                            p.text-muted Thunder Hawks
                     .col-lg-4
                         .team-member
                             img.mx-auto.rounded-circle(src='assets/img/team/toby.jpg', alt='...')
                             h4 Toby
-                            p.text-muted Chief Engineer
+                            p.text-muted Thunder Hawks
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/q.jpg', alt='...')
+                            h4 Q
+                            p.text-muted Thunder Hawks
+                .row
 
                     .col-lg-4
                         .team-member
                             img.mx-auto.rounded-circle(src='assets/img/team/zeke.jpg', alt='...')
                             h4 Zeke
-                            p.text-muted Strategy and Tactics
- 
+                            p.text-muted Phantom Hawks
+
                     .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/ellie.jpg', alt='...')
+                            h4 Ellie
+                            p.text-muted Phantom Hawks
+
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/dax.jpg', alt='...')
+                            h4 Dax
+                            p.text-muted Phantom Hawks
 
 
                 .row
@@ -312,6 +344,7 @@ html(lang='en')
 
         // Portfolio Modals
         include includes/robot-grabby
+        include includes/robot-flipper
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
